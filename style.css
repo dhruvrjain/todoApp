@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+body{
+    background: url('images/todo.jpg') no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato',sans-serif;
+}
+
+.add-container{
+    background-color: #fff;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    margin-bottom: 20px;
+}
+
+input{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#add{
+    font-size: 20px;
+    border: 2px solid rgb(228, 190, 0) ;
+    border-radius: 7px;
+    background-color: #fff;
+    transition: 0.3s;
+    color: rgb(228, 190, 0);
+}
+
+#add:hover{
+    color: #fff;
+    background-color: rgb(228, 190, 0);
+    cursor: pointer;
+}
+
+.strike{
+    text-decoration: line-through;
+    transition: 1s;
+}
+.tasks-container{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task{
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+}
+
+span{
+    overflow: auto;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin:auto 5px ;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.btn-wrap{
+    display: flex;
+}
+
+.check{
+    border: 2px solid orange;
+    color: orange;
+}
+
+.remove{
+    border: 2px solid red;
+    color: red;
+}
+
+.check:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.remove:hover{
+    background-color: red;
+    color: #fff;
+}
